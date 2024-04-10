@@ -20,7 +20,7 @@
         android:layout_below="@id/titleTv"
         android:inputType="text"
         android:textSize="20sp"
-        android:text="LETIANPAI"
+        android:text="ZTE-f4c5yt"
         android:hint="@string/enter_wifi_ssid_hint"/>
 
     <EditText

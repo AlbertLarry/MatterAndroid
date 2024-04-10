@@ -471,8 +471,8 @@ class OtaProviderClientFragment : Fragment() {
   }
 
   private fun updateOTAStatusBtnClick() {
-    val version = 2L
-    val versionString = "2.0"
+    val version = 10L
+    val versionString = "10.0"
 
     val filename = binding.firmwareFileTv.text.toString()
     Log.d(TAG, "updateOTAStatusBtnClick : $filename")
@@ -703,7 +703,11 @@ class OtaProviderClientFragment : Fragment() {
   private fun showMessage(msg: String) {
     requireActivity().runOnUiThread { binding.commandStatusTv.text = msg }
   }
-
+//0x000000000001B669
+  //dvertise operational node 28A41B9EAEE78BC5-000000000001B669
+  // Commission called for node ID 0x000000000000000C
+  //startConnectingToDevice: CHIPDeviceInfo(version=0, vendorId=5163, productId=2, discriminator=260, setupPinCode=34875538, commissioningFlow=0, optionalQrCodeInfoMap={},
+// discoveryCapabilities=[BLE], isShortDiscriminator=false, ipAddress=null, port=5540)
   companion object {
     private const val TAG = "OtaProviderClientFragment"
 

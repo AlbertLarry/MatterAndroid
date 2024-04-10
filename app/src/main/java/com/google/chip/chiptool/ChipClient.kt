@@ -43,7 +43,7 @@ object ChipClient {
   private lateinit var chipDeviceController: ChipDeviceController
   private lateinit var androidPlatform: AndroidChipPlatform
   /* 0xFFF4 is a test vendor ID, replace with your assigned company ID */
-  const val VENDOR_ID = 0xFFF4
+  const val VENDOR_ID = 5163
 
   fun getDeviceController(context: Context): ChipDeviceController {
     getAndroidChipPlatform(context)

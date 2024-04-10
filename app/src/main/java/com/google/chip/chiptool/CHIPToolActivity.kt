@@ -97,7 +97,7 @@ class CHIPToolActivity :
 
   override fun onCommissioningComplete(code: Long, nodeId: Long) {
     runOnUiThread {
-      Toast.makeText(this, getString(R.string.commissioning_completed, code), Toast.LENGTH_SHORT)
+      Toast.makeText(this, getString(R.string.commissioning_completed, code )+"nodeId: $nodeId", Toast.LENGTH_SHORT)
         .show()
     }
     DeviceIdUtil.setCommissionedNodeId(this, nodeId)
